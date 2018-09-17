@@ -7,7 +7,7 @@ class Application
       
       
     else
-      resp.status
+      resp.status ==404
     
   end
   
