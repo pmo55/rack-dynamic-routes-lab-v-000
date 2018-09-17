@@ -1,11 +1,11 @@
 class Application
-  
+  @@items=[]
   def call(env)
     resp = Rack::Response.new
     req = Rack::Response.new(env)
     if req.path.match(/items/)
       item_name= req.path.split("/items/").last 
-      if @@
+      if @@items= item_name
       
     else
       resp.status = 404
